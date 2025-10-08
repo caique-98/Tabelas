@@ -19,14 +19,23 @@
         
         table{
             margin-top: 5vh;
-            width: 80%;
+            width: 50%;
             border-collapse: collapse;
             margin-left: 10%;
             margin-right: 10%;
+            position: relative;
+            
         }
 
         thead{
             width: 100%;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -0.5vh;
+            background-color: rgb(255, 255, 0);
+
         }
 
         #cabeca{
@@ -40,9 +49,38 @@
         th, td{
             border: 1px solid black;
             width: 100vh;
+            padding: 1vh;
+            text-align: center;
         }
 
+        tbody > tr:nth-child(2n){
+            background-color: rgba(128, 128, 128, 0.217);
+        }
 
+        thead > tr:nth-child(1){
+            background-color: rgba(255, 255, 0, 0.712);
+        }
+
+        tbody > tr > td:nth-child(1){
+            background-color: rgba(5, 150, 5, 0.712);
+            color: white;
+            font-weight: ;
+            font-style: oblique;
+            
+        }
+        table > caption:nth-child(1){
+            background-color: rgba(0, 255, 255, 0.603);
+            padding-top: 1vh;
+            padding-bottom: 1vh;
+            font-weight: bolder;
+        }
+        tfoot > tr > td {            
+            background-color: rgba(114, 13, 134, 0.742);
+            font-weight: bolder;
+            padding-top: 1vh;
+            padding-bottom: 1vh;
+            color: white;
+        }
         
     </style>
     <title>Tabelas Grandes</title>
@@ -53,18 +91,206 @@
         <caption id="cabeca">Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Posicao
-                <th>Unidade Federativa
-                <th>Populacao
-                <th>% da Pop total
-                <th>Comparatvio
+                <th >Posicao
+                <th>Unidade Federativa (UF)
+                <th scope="col">Populacao
+                <th>% da Pop. total
+                <th>Comparativo
             </tr>
         </thead>
         <tbody>
-            
+            <tr>
+                <td>01º</td>
+                <td>Sao Paulo</td>
+                <td>21.000.000</td>
+                <td>21%</td>
+                <td>Espanha (20900000)</td>
+            </tr>
+            <tr>
+                <td>02º</td>
+                <td>Rio de Janeiro</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>03º</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>04º</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>05º</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>06º</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>07º</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>08º</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>09º</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>10º</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>11º</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>12º</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>13º</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>14º</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>15º</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>16º</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>17º</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>18º</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>19º</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>20º</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>21º</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>22º</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>23º</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>24º</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>25º</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>26º</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        
         </tbody>
         <tfoot id="cabeca">
-
+            <tr>
+                <td>Total:</td>
+                <td>26 UF's</td>
+                <td>220000000</td>
+                <td>100%</td>
+                
+            </tr>
         </tfoot>
     </table>
 </body>
