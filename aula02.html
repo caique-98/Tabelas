@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,12 +19,14 @@
         
         table{
             margin-top: 5vh;
-            width: 50%;
+            width: 50vw;
+            height: 50vh;
             border-collapse: collapse;
-            margin-left: 10%;
+            margin-left: 2vw;
             margin-right: 10%;
             position: relative;
-            
+            text-wrap: balance;
+            word-break: ;
         }
 
         thead{
@@ -55,10 +57,12 @@
 
         tbody > tr:nth-child(2n){
             background-color: rgba(128, 128, 128, 0.217);
+
         }
 
         thead > tr:nth-child(1){
             background-color: rgba(255, 255, 0, 0.712);
+            
         }
 
         tbody > tr > td:nth-child(1){
@@ -66,6 +70,7 @@
             color: white;
             font-weight: ;
             font-style: oblique;
+            
             
         }
         table > caption:nth-child(1){
@@ -81,7 +86,19 @@
             padding-bottom: 1vh;
             color: white;
         }
+
+
         
+        @media screen and (max-width: 767px){
+            #posicao{
+                display: none;
+
+            }
+            tbody > tr > td:nth-child(1){
+                display: none;
+            }
+        }
+
     </style>
     <title>Tabelas Grandes</title>
 </head>
@@ -91,69 +108,69 @@
         <caption id="cabeca">Unidades Federativas</caption>
         <thead>
             <tr>
-                <th >Posicao
-                <th>Unidade Federativa (UF)
+                <th scope="col" id="posicao">Posicao
+                <th scope="col">Unidade Federativa (UF)
                 <th scope="col">Populacao
-                <th>% da Pop. total
-                <th>Comparativo
+                <th scope="col">% da Pop. total
+                <th scope="col">Comparativo
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>01º</td>
                 <td>Sao Paulo</td>
-                <td>21.000.000</td>
-                <td>21%</td>
-                <td>Espanha (20900000)</td>
+                <td>46 081 801</td>
+                <td>21,59%%</td>
+                <td>Argentina (45 851 378)</td>
             </tr>
             <tr>
                 <td>02º</td>
-                <td>Rio de Janeiro</td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>Minas Gerais</td>
+                <td>21 393 441</td>
+                <td>4,81%</td>
+                <td>Chade (21 000 000)</td>
             </tr>
             <tr>
                 <td>03º</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>Rio de Janeiro</td>
+                <td>17 223 547</td>
+                <td>8,07%</td>
+                <td>Zimbabwe (16 950 795)</td>
             </tr>
             <tr>
                 <td>04º</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>Bahia</td>
+                <td>14 870 907</td>
+                <td>6,97%</td>
+                <td>Benim (14 814 460)</td>
             </tr>
             <tr>
                 <td>05º</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>Paraná</td>
+                <td>11 890 517</td>
+                <td>5,57%</td>
+                <td>Haiti (11 906 095)</td>
             </tr>
             <tr>
                 <td>06º</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>Rio Grande do Sul</td>
+                <td>11 233 263</td>
+                <td>5,26%</td>
+                <td>Emirados Árabes Unidos (11 346 000)</td>
             </tr>
             <tr>
                 <td>07º</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>Pernambuco</td>
+                <td>9 562 007</td>
+                <td>2,98%</td>
+                <td>Israel (9 517 181)</td>
             </tr>
             <tr>
                 <td>08º</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>Ceará</td>
+                <td>9 268 836</td>
+                <td>4,34%</td>
+                <td>Áustria (9 113 574)</td>
             </tr>
             <tr>
                 <td>09º</td>
